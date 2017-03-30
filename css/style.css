@@ -210,8 +210,8 @@ button:focus {
 }
 
 .surroundings {
-	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
-	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+	-webkit-transform: rotateX(64deg) rotateZ(-50deg) translateZ(-19vmin);
+	transform: rotateX(64deg) rotateZ(-50deg) translateZ(-19vmin);
 }
 
 
