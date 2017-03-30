@@ -1,10 +1,254 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Navigation</title>
-  </head>
-  <body>
-    <h1>Test navigation</h1>
-  </body>
-</html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>chvrch навигация</title>
+		<meta name="description" content="HSE student project hello my classmates yaaaaay" />
+		<meta name="keywords" content="VR floorplan" />
+
+		<link rel="shortcut icon" href="favicon.png">
+
+		<link rel="stylesheet" type="text/css" href="css/stylenav.css" />
+
+		<script src="js/modernizr-custom.js"></script>
+	</head>
+
+	<body>
+		<svg class="hidden">
+			<defs>
+				<symbol id="icon-search" viewBox="0 0 32 32">
+					<title>search</title>
+					<path class="path1" d="M26.819 24.917c0.262 0.262 0.262 0.688 0 0.951l-0.951 0.951c-0.263 0.262-0.688 0.262-0.951 0l-6.656-6.656c-0.072-0.072-0.12-0.158-0.153-0.248-1.365 0.998-3.041 1.593-4.862 1.593-4.562 0-8.261-3.699-8.261-8.261s3.699-8.261 8.261-8.261c4.562 0 8.261 3.699 8.261 8.261 0 1.821-0.595 3.497-1.593 4.862 0.091 0.032 0.176 0.080 0.248 0.153l6.656 6.656zM13.246 7.739c-3.041 0-5.508 2.466-5.508 5.508s2.466 5.508 5.508 5.508 5.508-2.466 5.508-5.508c0-3.041-2.466-5.508-5.508-5.508z"></path>
+				</symbol>
+
+				<symbol id="icon-stack" viewBox="0 0 32 32">
+					<title>stack</title>
+					<path class="path1" d="M29.143 11.071l-13.143-6.571-13.143 6.571 13.143 6.571 13.143-6.571zM16 6.681l8.781 4.39-8.781 4.39-8.781-4.39 8.781-4.39zM26.51 14.684l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255zM26.51 19.612l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255z"></path>
+				</symbol>
+
+				<symbol id="icon-cross" viewBox="0 0 24 24">
+					<title>cross</title>
+					<path class="path1" d="M18.016 5.125q0.369 0 0.614 0.245t0.245 0.614q0 0.363-0.248 0.611l-5.411 5.405 5.411 5.405q0.248 0.248 0.248 0.611 0 0.369-0.245 0.614t-0.614 0.245q-0.363 0-0.611-0.248l-5.405-5.411-5.405 5.411q-0.248 0.248-0.611 0.248-0.369 0-0.614-0.245t-0.245-0.614q0-0.363 0.248-0.611l5.411-5.405-5.411-5.405q-0.248-0.248-0.248-0.611 0-0.369 0.245-0.614t0.614-0.245q0.363 0 0.611 0.248l5.405 5.411 5.405-5.411q0.248-0.248 0.611-0.248z"></path>
+				</symbol>
+
+				<symbol id="icon-droplet" viewBox="0 0 32 32">
+					<title>droplet</title>
+					<path class="path1" d="M27.020 14.786c-2.055-5.732-6.41-10.88-11.020-14.786-4.61 3.907-8.965 9.054-11.020 14.786-1.271 3.545-1.396 7.393 0.393 10.794 2.058 3.911 6.207 6.42 10.626 6.42s8.569-2.509 10.626-6.42c1.79-3.401 1.664-7.249 0.393-10.794zM23.086 23.717c-1.369 2.602-4.15 4.283-7.086 4.283-1.723 0-3.391-0.579-4.753-1.583 0.414 0.054 0.832 0.083 1.254 0.083 3.67 0 7.146-2.1 8.856-5.351 1.402-2.665 1.281-5.433 0.746-7.636 0.455 0.88 0.841 1.756 1.151 2.623 0.706 1.971 1.251 4.886-0.168 7.581z"></path>
+				</symbol>
+
+				<symbol id="icon-modx" viewBox="0 0 32 32">
+					<title>modx</title>
+					<path class="path1" d="M25.482 12.661l-10.964-6.893 1.643-2.696h15.268zM7.232 17.393l-3.286-2.071v-15.321l21.125 13.268zM25.429 14.982l2.625 1.696v15.321l-9.5-5.982zM24.768 14.607l-8.929 14.321h-15.268l6.357-10.196z"></path>
+				</symbol>
+			</defs>
+		</svg>
+
+		<div class="container">
+			<div class="main">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="index.html" title="chvrch"><span>Previous Demo</span></a>
+					</div>
+
+					<h1>Назад к сайту chvrch</h1>
+				</header>
+				<div class="mall">
+					<div class="levels">
+						<div class="level level--1" aria-label="Level 1">
+							<title>Map Level 1</title>
+							<img src="images/1.png">
+							<div class="level__pins">
+								<a class="pin pin--1-1" data-category="1" data-space="1.01" href="#" aria-label="Магазин">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--2" aria-label="Level 2">
+							<title>Map Level 2</title>
+							<img src="images/2.png">
+							<div class="level__pins">
+								<a class="pin pin--2-1" data-category="1" data-space="2.01" href="#" aria-label="Жилая зона">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--3" aria-label="Level 3">
+							<title>Map Level 3</title>
+							<img src="images/3.png">
+							<div class="level__pins">
+								<a class="pin pin--3-1" data-category="2" data-space="3.01" href="#" aria-label="Исследовательский центр">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--4" aria-label="Level 4">
+							<title>Map Level 2</title>
+							<img src="images/4.png">
+							<div class="level__pins">
+								<a class="pin pin--4-1" data-category="1" data-space="4.01" href="#" aria-label="Pin for Cold Soup Kitchen">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--5" aria-label="Level 5">
+							<title>Map Level 5</title>
+							<img src="images/5.png">
+							<div class="level__pins">
+								<a class="pin pin--5-1" data-category="1" data-space="5.01" href="#" aria-label="Серверная">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--6" aria-label="Level 6">
+							<title>Map Level 6</title>
+							<img src="images/6.png">
+							<div class="level__pins">
+								<a class="pin pin--6-1" data-category="2" data-space="6.01" href="#" aria-label="Научный отдел">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--7" aria-label="Level 7">
+							<title>Map Level 7</title>
+							<img src="images/7.png">
+							<div class="level__pins">
+								<a class="pin pin--7-1" data-category="2" data-space="7.01" href="#" aria-label="Зона отдыха">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="level level--8" aria-label="Level 8">
+							<title>Map Level 8</title>
+							<img src="images/8.png">
+							<div class="level__pins">
+								<a class="pin pin--8-1" data-category="3" data-space="8.01" href="#" aria-label="Конференц зал">
+									<span class="pin__icon">
+										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<button class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+				<nav class="mallnav mallnav--hidden">
+					<button class="boxbutton mallnav__button--up boxbutton--zero" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
+					<button class="boxbutton boxbutton--dark mallnav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
+					<button class="boxbutton mallnav__button--down boxbutton--zero" aria-label="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
+				</nav>
+
+				<div class="content">
+					<div class="content__item" data-space="1.01" data-category="1">
+						<h3 class="content__item-title">Магазин</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Часы работы</strong> 6:30 &mdash; 00:30</span>
+								<span class="content__meta-item"><strong>Телефон</strong> 999 99 99</span>
+							</p>
+							<p class="content__desc">Магазин служит для знакомства обычных людей c&nbsp;корпорацией chvrch. Представляет собой просторный этаж с&nbsp;фирменными очками виртуальной реальности.</p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="2.01" data-category="1">
+						<h3 class="content__item-title">Жилая зона</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Здесь живут люди, увлеченные игрой, они оплачивают свое пребывание в&nbsp;кампусе финансово или своим трудом, а&nbsp;также игровым временем</p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="3.01" data-category="2">
+						<h3 class="content__item-title">Исследовательский центр</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Оснащен современным оборудованием: МРТ, центры полного погружения в&nbsp;виртуальную реальность, сканеры мозга, операционные, лаборатории сна. В&nbsp;исследовательском центре испытывают взаимодействие&nbsp;VR и&nbsp;мозга человека на&nbsp;адептах. Апробируются новые технологии и&nbsp;нейроинтерфейсы </p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="4.01" data-category="2">
+						<h3 class="content__item-title">Офисы</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Здесь располагается офисный персонал, нужный, чтобы обслуживать инфраструктуру, привлекать инвестиции, проводить рекламные кампании, управлять финансовыми потоками, разрешать юридические вопросы и&nbsp;заниматься связями с&nbsp;общественностью. Для этого выделен значительный пул этажей для офисов, обеспечивающих работу научного центра.</p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="5.01" data-category="2">
+						<h3 class="content__item-title">Серверная</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Серверные мощности с&nbsp;5000&nbsp;ЦП, 40600 ядрами и&nbsp;общей частотой 93 440,00&nbsp;ГГц, можностями компьютерной зоны chvrch может свободно пользоваться люой сотрудник. </p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="6.01" data-category="2">
+						<h3 class="content__item-title">Научный отдел</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Здесь создаётся будущее для человечества. Его новый вид: человек превосходный. Новые виды датчиков и&nbsp;электродов, исследования реакции коры мозга на&nbsp;раздражители, формирование памяти и&nbsp;сознания, написание протокола передачи данных мозг-компьютер. В&nbsp;chvrch есть несколько подразделений&nbsp;&mdash; до&nbsp;десяти лабораторий в&nbsp;каждом: исследование&nbsp;ИИ, &laquo;мозг-компьютер&raquo; и&nbsp;&laquo;компьютер-мозг&raquo; интерфейсы, декодирование сигналов мозга, нейрохирургия, моделирование реальности, моделирование сознания, инженерные изыскания, коммерческие разработки. </p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="7.01" data-category="2">
+						<h3 class="content__item-title">Зона отдыха</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Доступна сотрудникам научного центра. В&nbsp;их&nbsp;распоряжении уютные диваны, игровые автоматы, смотровая площадка башни и&nbsp;&laquo;зеленая&raquo; зона&nbsp;&mdash; всё, стобы отдохнкть от&nbsp;работы с&nbsp;VR. </p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="8.01" data-category="3">
+						<h3 class="content__item-title">Конференц зал</h3>
+						<div class="content__item-details">
+							<p class="content__desc">Здесь происходит финансирование наших проектов. Все наши исследования спонсируются людьми, которые вспоследствии получат приоритет в&nbsp;обладании цифровым бессмертием. </p>
+						</div>
+					</div>
+
+					<button class="boxbutton boxbutton--zero content__button content__button--hidden" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+				</div>
+			</div>
+
+			<aside class="spaces-list" id="spaces-list">
+				<div class="search">
+					<input class="search__input" placeholder="Поиск..." />
+					<button class="boxbutton boxbutton--darker close-search" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+				</div>
+				<span class="label">
+					<input id="sort-by-name" class="label__checkbox" type="checkbox" aria-label="Show alphabetically"/>
+					<label class="label__text"></label>
+				</span>
+				<ul class="list grouped-by-category">
+					<li class="list__item" data-level="1" data-category="1" data-space="1.01"><a href="#" class="list__link">Магазин</a></li>
+					<li class="list__item" data-level="2" data-category="1" data-space="2.01"><a href="#" class="list__link">Жилая зона</a></li>
+					<li class="list__item" data-level="3" data-category="2" data-space="3.01"><a href="#" class="list__link">Исследовательский центр</a></li>
+					<li class="list__item" data-level="4" data-category="2" data-space="4.01"><a href="#" class="list__link">Офисы</a></li>
+					<li class="list__item" data-level="5" data-category="2" data-space="5.01"><a href="#" class="list__link">Серверная</a></li>
+					<li class="list__item" data-level="6" data-category="2" data-space="6.01"><a href="#" class="list__link">Научный отдел</a></li>
+					<li class="list__item" data-level="7" data-category="2" data-space="7.01"><a href="#" class="list__link">Зона отдыха</a></li>
+					<li class="list__item" data-level="8" data-category="3" data-space="8.01"><a href="#" class="list__link">Конференц зал</a></li>
+				</ul>
+			</aside>
+
+		</div>
+
+		<script src="js/classie.js"></script>
+		<script src="js/list.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
